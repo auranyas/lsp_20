@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\LaporanController;
 use App\Http\Controllers\Admin\PeminjamanController as AdminPeminjamanController;
 use App\Http\Controllers\Admin\PenerbitController;
 use App\Http\Controllers\Admin\PesanController as AdminPesanController;
+use App\Http\Controllers\Admin\BeritaController;
 use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\PeminjamanController;
 use App\Http\Controllers\User\PengembalianController;
@@ -41,7 +42,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('/register', [UserRegister::class, 'userRegister'])->name('user.register');
 
 
-Route::middleware(['auth','role:admin'])->prefix('/admin')->group(function(){
+Route::middleware(['auth', 'role:admin'])->prefix('/admin')->group(function () {
     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
 
     Route::get('/anggota', [AnggotaController::class, 'indexAnggota'])->name('admin.anggota');
@@ -83,9 +84,14 @@ Route::middleware(['auth','role:admin'])->prefix('/admin')->group(function(){
     Route::get('/pesan-terkirim', [AdminPesanController::class, 'pesanTerkirim'])->name('admin.pesan_terkirim');
     Route::post('/kirim-pesan', [AdminPesanController::class, 'kirimPesan'])->name('admin.kirim_pesan');
 
+    Route::get('/berita', [BeritaController::class, 'indexBerita'])->name('admin.berita');
+    Route::post('/tambah-berita', [BeritaController::class, 'storeBerita'])->name('admin.tambah_berita');
+    Route::put('/edit/berita/{id}', [BeritaController::class, 'updateBerita'])->name('admin.update_berita');
+    Route::post('/update-status-berita/{id}', [BeritaController::class, 'updateStatusBerita'])->name('admin.update_status_berita');
+    Route::delete('/hapus/berita/{id}', [BeritaController::class, 'deleteBerita']);
 });
 
-Route::middleware(['auth', 'role:user'])->prefix('/user')->group(function(){
+Route::middleware(['auth', 'role:user'])->prefix('/user')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('user.dashboard');
 
     Route::get('riwayat-peminjaman', [PeminjamanController::class, 'riwayatPeminjaman'])->name('user.riwayat_peminjaman');

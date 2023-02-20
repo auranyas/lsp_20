@@ -52,7 +52,14 @@
     </li>
 
     <li class="sidebar-item  ">
-        <a href="{{ route('admin.penerbit') }}" class='sidebar-link'>
+        <a href="{{ route('admin.berita') }}" class='sidebar-link'>
+            <i class="bi bi-file-earmark-medical-fill"></i>
+            <span>Berita</span>
+        </a>
+    </li>
+
+    <li class="sidebar-item  ">
+        <a href="{{ route('admin.identitas') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Identitas Aplikasi</span>
         </a>

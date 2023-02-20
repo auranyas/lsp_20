@@ -9,6 +9,7 @@ use App\Models\Peminjaman;
 use App\Models\Penerbit;
 use App\Models\Pesan;
 use App\Models\User;
+use App\Models\Berita;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 

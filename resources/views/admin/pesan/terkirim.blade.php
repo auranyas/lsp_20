@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     @if (session('status'))
-        <div class="alert alert-{{ session('status') }}">
+        <div class="alert alert-{{ session('status') }}" style="background-color: brown;">
             {{ session('message') }}
         </div>
     @endif
