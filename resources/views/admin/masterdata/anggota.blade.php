@@ -9,15 +9,15 @@
         <div class="col-9">
             <h4>Data Anggota E - Perpus</h4>
         </div>
-        <div class="col-3 mb-2 d-flex justify-content-end" >
-            <a href="" class="btn btn-primary float " >Pinjam</a>
+        <div class="col-3 mb-2 d-flex justify-content-end">
+            <a href="" class="btn btn-primary float ">Pinjam</a>
         </div>
     </div>
     <section class="section">
         <div class="card">
             <div class="card-body">
-                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-send-plus-fill"></i>
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                        class="bi bi-send-plus-fill"></i>
                     Tambah Anggota
                 </button>
                 <!-- Modal ADD DATA -->

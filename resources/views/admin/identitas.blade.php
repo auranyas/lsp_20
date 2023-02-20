@@ -8,9 +8,7 @@
     <div class="mb-3">
         <center>
             <img src="{{ $identitas->foto }}" class="rounded-circle" style="width: 150px;" alt="Avatar" />
-
         </center>
-
     </div>
 
     <form class="form form-vertical" action="{{ url('admin/edit/identitas') }}" method="POST" enctype="multipart/form-data">

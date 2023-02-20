@@ -16,8 +16,8 @@
     <section class="section">
         <div class="card">
             <div class="card-body">
-                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-send-plus-fill"></i>
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                        class="bi bi-send-plus-fill"></i>
                     Tambah Kategori
                 </button>
                 <!-- Modal ADD DATA -->
@@ -30,8 +30,8 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <form action="{{ Route('admin.tambah_kategori') }}" enctype="multipart/form-data"
-                                method="POST" autocomplete="off">
+                            <form action="{{ Route('admin.tambah_kategori') }}" enctype="multipart/form-data" method="POST"
+                                autocomplete="off">
                                 @csrf
                                 <div class="modal-body">
                                     <div class="col-12 mb-4">
@@ -50,8 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                     <button type="submit" class="btn btn-primary">Save changes</button>
                                 </div>
                             </form>

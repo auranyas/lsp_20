@@ -16,8 +16,8 @@
     <section class="section">
         <div class="card">
             <div class="card-body">
-                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-send-plus-fill"></i>
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                        class="bi bi-send-plus-fill"></i>
                     Tambah Buku
                 </button>
                 <!-- Modal ADD DATA -->
@@ -141,7 +141,9 @@
                                             <select name="kategori_id" id="" class="form-select">
 
                                                 @foreach ($kategori as $k)
-                                                    <option value="{{ $k->id }}" {{ $k->id === $b->kategori_id ? 'selected' : '' }}>{{ $k->nama }}</option>
+                                                    <option value="{{ $k->id }}"
+                                                        {{ $k->id === $b->kategori_id ? 'selected' : '' }}>
+                                                        {{ $k->nama }}</option>
                                                 @endforeach
 
                                             </select>
