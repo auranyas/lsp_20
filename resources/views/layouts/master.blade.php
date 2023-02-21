@@ -42,11 +42,6 @@
         ->take(5)
         ->get();
 
-    // use App\Models\Peminjaman;
-    // $peminjaman = Peminjaman::where('user_id'  $request->user_id)
-    // ->take()
-    // ->get();
-
 @endphp
 
 <body>
@@ -168,7 +163,7 @@
 
                                         @if (count($pesan) == 0)
                                             <li><a class="dropdown-item" href="#">
-                                                    No New Mail
+                                                    tidak ada pesan
                                                 </a>
                                             </li>
                                         @endif
@@ -190,7 +185,7 @@
                                             aria-labelledby="dropdownMenuButton">
                                             @if (count($pemberitahuan) == 0)
                                                 <li><a class="dropdown-item" href="#">
-                                                        No New Pemberitahuan
+                                                        tidak ada pemberitahuan
                                                     </a>
                                                 </li>
                                             @else

@@ -6,6 +6,9 @@
             {{ session('message') }}
         </div>
     @endif
+    <div class="d-flex justify-content-center">
+        <h4>Formulir Peminjaman</h4>
+    </div>
     <div class="card">
         <div class="card-header">
             <h4>Form Peminjaman</h4>

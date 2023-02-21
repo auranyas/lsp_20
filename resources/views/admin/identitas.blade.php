@@ -1,8 +1,9 @@
 @extends('layouts.master')
 @section('content')
-    <div class="mb-3">
+    <div class="">
         <center>
-            <h3>Identitas Aplikasi</h3>
+            <h3><i class="bi bi-people-fill"></i> Identitas Aplikasi <i class="bi bi-people-fill"></i></h3>
+
         </center>
     </div>
     <div class="mb-3">
@@ -19,7 +20,7 @@
                 <h4 class="card-title">Edit Identitas Aplikasi</h4>
             </div>
             <div class="card-body">
-                <table class="table table-striped table bordered">
+                <table class="table table bordered">
                     <tr>
                         <th>Foto</th>
                         <td>

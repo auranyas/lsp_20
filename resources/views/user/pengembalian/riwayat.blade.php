@@ -9,8 +9,8 @@
         <div class="col-9">
             <h4>Buku yang sudah dikembalikan</h4>
         </div>
-        <div class="col-3">
-            <a href="{{ Route('user.form_peminjaman') }}" class="btn btn-primary float">Pinjam</a>
+        <div class="col-3 mb-2 d-flex justify-content-end">
+            <a href="{{ route('user.form_peminjaman') }}" class="btn btn-primary float">Pinjam Buku</a>
         </div>
     </div>
     <section class="section">

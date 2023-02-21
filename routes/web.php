@@ -78,6 +78,10 @@ Route::middleware(['auth', 'role:admin'])->prefix('/admin')->group(function () {
     Route::put('edit/identitas', [IdentitasController::class, 'updateIdentitas'])->name('admin.update_identitas');
 
     Route::get('/index', [LaporanController::class, 'index'])->name('admin.index');
+    Route::post('/laporan-pdf', [LaporanController::class, 'laporan_pdf'])->name('admin.lap_pdf');
+    Route::post('/peminjaman', [LaporanController::class, 'laporan_pdf'])->name('admin.laporan_peminjaman');
+    Route::post('/pengembalian', [LaporanController::class, 'laporan_pdf'])->name('admin.laporan_pengembalian');
+    Route::post('/laporan_user', [LaporanController::class, 'laporan_pdf'])->name('admin.laporan_user');
 
     Route::get('/pesan-masuk', [AdminPesanController::class, 'pesanMasuk'])->name('admin.pesan_masuk');
     Route::post('/admin-status', [AdminPesanController::class, 'admin_status'])->name('admin.ubah_status');

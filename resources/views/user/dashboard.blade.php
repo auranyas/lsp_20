@@ -3,15 +3,10 @@
 @section('content')
     <div class="row">
         <div class="col">
-            {{-- @foreach ($pemberitahuans as $pemberitahuan)
-                <div class="alert alert-primary" role="alert">
-                    {{ $pemberitahuan->isi }}
-                </div>
-            @endforeach --}}
-                
+
             <div class="">
                 @foreach ($beritas as $berita)
-                    <div class="alert alert-primary alert-dismissible fade show">
+                    <div class="alert alert-primary alert-dismissible fade show" style="background-color: #86A3B8">
                         {{ $berita->isi }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
@@ -26,7 +21,7 @@
                         <div class="col-12">
                             <h4>
                                 <span class="badge bg-light-danger"
-                                    style="background-color: #BFDCE5";>{{ $k->nama }}</span>
+                                    style="background-color: #BDCDD6";>{{ $k->nama }}</span>
                             </h4>
                             <div class="row">
                                 @foreach ($k->bukus as $buku)

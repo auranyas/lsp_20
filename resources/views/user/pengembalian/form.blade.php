@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="container">
+        <div class="d-flex justify-content-center">
+            <h4>Formulir Pengembalian</h4>
+        </div>
         <div class="card">
             <div class="card-header">
                 <h4>Form Pengembalian buku</h4>

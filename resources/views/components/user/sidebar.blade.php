@@ -10,7 +10,7 @@
 
     <li class="sidebar-item  has-sub">
         <a href="#" class='sidebar-link'>
-            <i class="bi bi-stack"></i>
+            <i class="bi bi-bookmark-check-fill"></i>
             <span>Peminjaman Buku</span>
         </a>
         <ul class="submenu ">
@@ -25,7 +25,7 @@
 
     <li class="sidebar-item  has-sub">
         <a href="#" class='sidebar-link'>
-            <i class="bi bi-collection-fill"></i>
+            <i class="bi bi-clipboard2-check-fill"></i>
             <span>Pengembalian Buku</span>
         </a>
         <ul class="submenu ">
@@ -41,7 +41,7 @@
 
     <li class="sidebar-item  has-sub">
         <a href="#" class='sidebar-link'>
-            <i class="bi bi-collection-fill"></i>
+            <i class="bi bi-chat-left-text-fill"></i>
             <span>Pesan</span>
         </a>
         <ul class="submenu ">
@@ -60,7 +60,7 @@
 
     <li class="sidebar-item  ">
         <a href="{{ route('user.profile') }}" class='sidebar-link'>
-            <i class="bi bi-file-earmark-medical-fill"></i>
+            <i class="bi bi-person-badge"></i>
             <span>Profile Saya </span>
         </a>
     </li>

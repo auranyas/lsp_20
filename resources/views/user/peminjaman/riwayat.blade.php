@@ -7,10 +7,10 @@
     @endif
     <div class="row">
         <div class="col-9">
-            <h4>Buku yang sedang dipinjams</h4>
+            <h4>Buku yang sedang dipinjam</h4>
         </div>
         <div class="col-3 mb-2 d-flex justify-content-end">
-            <a href="" class="btn btn-primary float">Pinjam</a>
+            <a href="{{ route('user.form_pengembalian') }}" class="btn btn-primary float">Kembalikan buku</a>
         </div>
     </div>
     <section class="section">

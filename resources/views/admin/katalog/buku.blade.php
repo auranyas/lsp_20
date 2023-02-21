@@ -7,10 +7,7 @@
     @endif
     <div class="row">
         <div class="col-9">
-            <h4>Data Buku E - Perpus</h4>
-        </div>
-        <div class="col-3 mb-2 d-flex justify-content-end">
-            <a href="" class="btn btn-primary float ">Pinjam</a>
+            <h4>Data Buku</h4>
         </div>
     </div>
     <section class="section">

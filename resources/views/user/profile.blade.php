@@ -10,7 +10,7 @@
 
         <div class="mb-3">
             <center>
-                <h3>Profil Saya</h3>
+                <h3>Profil Saya <i class="bi bi-person-bounding-box"></i></h3>
             </center>
         </div>
         <div class="mb-3">
@@ -29,7 +29,7 @@
                     <h4>Update Profile</h4>
                 </div>
                 <div class="card-body">
-                    <table class="table table-striped table bordered">
+                    <table class="table  table bordered">
                         <tr>
                             <th>Foto</th>
                             <td>
@@ -69,7 +69,7 @@
                             <th>Password</th>
                             <td>
                                 <input class="form-control" type="password" name="password"
-                                    placeholder="Sandi belum dirubah" autocomplete="" required>
+                                    placeholder="Sandi belum berubah" autocomplete="" required>
                             </td>
                         </tr>
 
